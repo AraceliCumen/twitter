@@ -1,0 +1,19 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #6ad2f3;
+  text-align: center;
+  height: 80px;
+  width: 100%;
+}
+
+a{
+  color: white;
+  font-size: 50px;
+  padding-top: 25px;
+  text-decoration: none;
+}
