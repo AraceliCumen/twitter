@@ -2,8 +2,8 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
 }
-
 
 header{
   background-color: #6ad2f3;
@@ -16,7 +16,11 @@ header a{
   color: white;
   font-size: 50px;
   text-decoration: none;
+<<<<<<< HEAD
+  font-family: 'Indie Flower', cursive;
+=======
   font-family: 'Playball', cursive;
+>>>>>>> 822d41e1e3463601e6d362fc5ccfa6753b407b63
 }
 
 main{
@@ -27,6 +31,29 @@ main{
 }
 
 main section{
+<<<<<<< HEAD
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid aquamarine;
+  width: 500px;
+  height: 180px;
+  float: left;
+  margin-top: 20px;
+}
+
+#presentation{
+  margin-left: 170px;
+}
+
+main section hr{
+  color: grey;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+main section h3{
+=======
   padding: 0 120px;
   column-width: 400px;
   column-count: 2;
@@ -49,12 +76,109 @@ main section{
 
 main section h3{
   font-family: 'PT Serif', serif;
+>>>>>>> 822d41e1e3463601e6d362fc5ccfa6753b407b63
   line-height: 18px;
   padding: 10px;
 }
 
 main section p{
   padding: 10px;
+<<<<<<< HEAD
+}
+
+main #presentation h4 {
+  margin-top: 10px;
+  color: rgb(11, 11, 49);
+  padding-left: 10px;
+}
+
+#writetwitt{
+  margin-left: 10px;
+}
+
+#text-area{
+  border: none;
+  outline: none;
+  font-family: 'Arvo', serif;
+  overflow: scroll;
+  width: 100%;
+  overflow-y:hidden;
+  overflow-x: hidden;
+  height: 80px;
+  padding: 10px;
+}
+
+button{
+  font-family: 'Indie Flower', cursive;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #6ad2f3;
+  border: none;
+  padding: 5px;
+  color:#000;
+  margin-top: 3px;
+  margin-left: 5px;
+  border-radius: 4px;
+}
+
+button:hover{
+  outline: none;
+}
+
+#writetwitt hr{
+  height: 3px;
+  background-color: grey;
+}
+
+#counter-characters{
+  display: inline-block;
+  position: relative;
+  left: 72%;
+  font-family:'Indie Flower', cursive;
+  font-size: 20px;
+  top:5px;
+  font-weight: 700;
+}
+
+.paragraph{
+  margin: 20px 350px;
+  background-color: #b3f3ff;
+  padding: 10px;
+  color:#000;
+  border-radius: 10px;
+  font-family: 'Arvo', serif;
+}
+
+.date{
+font-size: 9px;
+margin-top: 4px;
+}
+
+button[disabled]{
+background:#a79f95;
+}
+
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  color: #A08FEB ;
+}
+
+.blue{
+  color:#2e479e;
+}
+
+.yellow{
+  color:#ee5d02;
+}
+
+.green{
+ color: #2bd117;
+}
+
+.red{
+  color:#a71712;
+=======
+>>>>>>> 822d41e1e3463601e6d362fc5ccfa6753b407b63
 }
 
 main #presentation h4 {
