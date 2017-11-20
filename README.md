@@ -1,9 +1,9 @@
-# Proyecto Nuestras Coders
+# Proyecto Twitter
 
 ## Objetivos
 
- Replicar la muestra de la imgane de Nuestras Coders dada en el punto Clase Práctica
+ Replicar la página de Twitter
 
 ## Resultados
 
- ![Proyecto Nuestras Coders](assets/imgs/results/result.png "Nuestras Coders")
+ ![Proyecto Twitter](assets/imgs/results/result.png "Twitter")

@@ -10,7 +10,8 @@ window.addEventListener('load',function(){
     textArea.addEventListener('input',function(event){
         // Declaramos una variable para capturar el número de caracteres que se ingrese en el textArea
         var tweetLength = textArea.textContent.length;
-        if (tweetLength > 0 && tweetLength <= 140) { // si el textarea esta vacio o la cantidad es mayoy a 140 se deshabilita el boton
+        // si el textarea esta vacio o la cantidad es mayoy a 140 se deshabilita el boton
+        if (tweetLength > 0 && tweetLength <= 140) { 
           button.removeAttribute('disabled');
         } else { 
           button.setAttribute('disabled', 'disabled');
@@ -20,7 +21,7 @@ window.addEventListener('load',function(){
     // funcion para que se redimensione el textarea
     textArea.addEventListener('input',function(event){
         textArea.style.height = '80px';
-        // se redimensiona deacuerdo al scroll
+        // se redimensiona de acuerdo al scroll
         textArea.style.height = textArea.scrollHeight + 'px'; 
     });
     // Aregamos la función para  controlar los caracteres
@@ -40,7 +41,7 @@ window.addEventListener('load',function(){
     });
     // Agregamos el evento click 
     button.addEventListener('click', function(event){
-      // Creamos el contenedor donde se almacenera los tweets
+      // Creamos el contenedor donde se almaceneran los tweets
         var containerBig = document.createElement('div'); 
         var tagParagraph = document.createElement('p');
         var date = document.createElement('p');
@@ -65,7 +66,7 @@ window.addEventListener('load',function(){
         containerBig.setAttribute('class', 'paragraph');
         messages.appendChild(containerBig);
         textArea.textContent = '';
-        // cada vez que cree un twwet se deshabilitara el boton
+        // cada vez que cree un tweet se deshabilitara el boton
         button.setAttribute('disabled', 'disabled'); 
         counter.textContent = '140';
     });
