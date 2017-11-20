@@ -1,7 +1,7 @@
 // Nos aseguramos que la pagina cargue 
 window.addEventListener('load',function(){
     // Capturamos el texto que se ingrese
-    var textArea = document.querySelector('textarea');
+    var textArea = document.getElementById('text-area');
     // Capturamos el boton 
     var button = document.querySelector('button');
     // capturamos el número de caracteres máximo ques epuede ingresar
@@ -9,13 +9,12 @@ window.addEventListener('load',function(){
     // Agregamos el evento enable al text area
     textArea.addEventListener('input',function(event){
         // Declaramos una variable para capturar el número de caracteres que se ingrese en el textArea
-        var tweetLegnth = textArea.value.length;
-        if(textArea.value != "" && tweetLength<=140){
-            button.removeAttribute('disabled');
-          } else{
-            var attr = document.createAttribute('disabled');
-            button.setAttribute('disabled','disabled');
-          }
+        var tweetLength = textArea.textContent.length;
+        if (tweetLength > 0 && tweetLength <= 140) { // si el textarea esta vacio o la cantidad es mayoy a 140 se deshabilita el boton
+          button.removeAttribute('disabled');
+        } else { 
+          button.setAttribute('disabled', 'disabled');
+        }
     });
     // Agregamos el evento scroll 
     // funcion para que se redimensione el textarea
@@ -25,7 +24,7 @@ window.addEventListener('load',function(){
         textArea.style.height = textArea.scrollHeight + 'px'; 
     });
     // Aregamos la función para  controlar los caracteres
-    textArea.addEventListener('input',function(){
+    textArea.addEventListener('input',function(event){
         var tweetLength = textArea.textContent.length;
         var result = 140 - tweetLength;
         counter.textContent = result;
@@ -40,14 +39,16 @@ window.addEventListener('load',function(){
         }
     });
     // Agregamos el evento click 
-    button.addEventListener('click', function(){
-        var containerBig = document.createElement('div'); // contenedor donde se almacenera los tweets
+    button.addEventListener('click', function(event){
+      // Creamos el contenedor donde se almacenera los tweets
+        var containerBig = document.createElement('div'); 
         var tagParagraph = document.createElement('p');
         var date = document.createElement('p');
         var paragraphMessage = document.createTextNode(textArea.textContent);
-        var messages = document.getElementById('writetwitt');
+        var messages = document.getElementById('tweetContainer');
         tagParagraph.appendChild(paragraphMessage);
-        var hour = new Date(); // para obtener la hora actual
+        var hour = new Date(); 
+        // obtenemos la hora actual
         var hourTweet = hour.getHours();
         var minutes = new Date();
         var minutesText = minutes.getMinutes();
