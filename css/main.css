@@ -16,11 +16,7 @@ header a{
   color: white;
   font-size: 50px;
   text-decoration: none;
-<<<<<<< HEAD
   font-family: 'Indie Flower', cursive;
-=======
-  font-family: 'Playball', cursive;
->>>>>>> 822d41e1e3463601e6d362fc5ccfa6753b407b63
 }
 
 main{
@@ -31,7 +27,6 @@ main{
 }
 
 main section{
-<<<<<<< HEAD
   background-color: white;
   border-radius: 5px;
   border: 1px solid aquamarine;
@@ -53,37 +48,12 @@ main section hr{
 }
 
 main section h3{
-=======
-  padding: 0 120px;
-  column-width: 400px;
-  column-count: 2;
-  column-gap: 20px;
-  display: inline-block;
-}
-
-
-/* #presentation{
-  background-color: white;
-  border-radius: 5px;
-  border: 1px solid aquamarine;
-  display: inline-block;
-  width: 450px;
-  height: 260px;
-  position: relative;
-  left: 200px;
-  top: 20px;
-}
-
-main section h3{
-  font-family: 'PT Serif', serif;
->>>>>>> 822d41e1e3463601e6d362fc5ccfa6753b407b63
   line-height: 18px;
   padding: 10px;
 }
 
 main section p{
   padding: 10px;
-<<<<<<< HEAD
 }
 
 main #presentation h4 {
@@ -98,8 +68,6 @@ main #presentation h4 {
 
 #text-area{
   border: none;
-  outline: none;
-  font-family: 'Arvo', serif;
   overflow: scroll;
   width: 100%;
   overflow-y:hidden;
@@ -146,7 +114,6 @@ button:hover{
   padding: 10px;
   color:#000;
   border-radius: 10px;
-  font-family: 'Arvo', serif;
 }
 
 .date{
@@ -160,44 +127,22 @@ background:#a79f95;
 
 [contenteditable=true]:empty:before{
   content: attr(placeholder);
-  color: #A08FEB ;
+  color: rgb(95, 94, 100) ;
 }
 
 .blue{
-  color:#2e479e;
+  color:hsl(226, 88%, 38%);
 }
 
 .yellow{
-  color:#ee5d02;
+  color:hsl(64, 98%, 47%);
 }
 
 .green{
- color: #2bd117;
+ color: hsl(140, 80%, 45%);
 }
 
 .red{
-  color:#a71712;
-=======
->>>>>>> 822d41e1e3463601e6d362fc5ccfa6753b407b63
+  color:hsl(0, 91%, 50%);
 }
 
-main #presentation h4 {
-  margin-top: 100px;
-  color: rgb(27, 27, 102);
-  font-family: 'PT Serif', serif;
-  text-decoration: none;
-  padding-left: 10px;
-  padding-bottom: 25px;
-}
-
-#writetwitt{
-  background-color: white;
-  border-radius: 5px;
-  border: 1px solid aquamarine;
-  display: inline-block;
-  width: 450px;
-  height: 200px;
-  position: relative;
-  left: 250px;
-  top: 10px;
-} */
